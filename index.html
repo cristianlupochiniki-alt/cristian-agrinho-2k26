@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol & Sustentabilidade: O Jogo do Século</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">FutVerde <span>FC</span></div>
+        <nav>
+            <ul>
+                <li><a href="#escalacao">Escalação</a></li>
+                <li><a href="#defesa">Agricultura Familiar</a></li>
+                <li><a href="#ataque">Agronegócio</a></li>
+                <li><a href="#meio-campo">Sustentabilidade</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>O Equilíbrio do Jogo no Campo Brasileiro</h1>
+            <p>Como a produção agrícola e a preservação ambiental jogam no mesmo time para garantir o futuro do país.</p>
+            <a href="#escalacao" class="btn">Ver Esquema Tático</a>
+        </div>
+    </section>
+
+    <section id="escalacao" class="container">
+        <h2 class="section-title">A Escalação do Campo Brasileiro</h2>
+        <p class="intro-text">No futebol, um time sem equilíbrio entre a defesa e o ataque está fadado ao fracasso. Da mesma forma, as terras brasileiras precisam de harmonia entre os pequenos produtores e as grandes potências exportadoras.</p>
+    </section>
+
+    <section class="grid-setores container">
+        
+        <div class="card" id="defesa">
+            <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=600" alt="Agricultura Familiar">
+            <div class="card-body">
+                <h3>A Defesa: Agricultura Familiar</h3>
+                <p>Responsável por colocar a maior parte do alimento na mesa dos brasileiros. Embora essencial para a segurança alimentar e preservação cultural, muitas vezes enfrenta a <strong>impotência</strong> da falta de crédito, infraestrutura e apoio técnico para competir em grande escala.</p>
+                <button class="btn-info" onclick="mostrarDetalhes('familiar')">Ver Estatísticas</button>
+            </div>
+        </div>
+
+        <div class="card" id="ataque">
+            <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad451?auto=format&fit=crop&q=80&w=600" alt="Agronegócio Tecnológico">
+            <div class="card-body">
+                <h3>O Ataque: O Agronegócio</h3>
+                <p>O motor econômico das exportações brasileiras, focado em alta tecnologia e produtividade de commodities (como soja e milho). Contudo, sua força esbarra na <strong>impotência</strong> diante dos limites climáticos: sem preservação ambiental, o próprio setor sofre com secas severas e quebras de safra.</p>
+                <button class="btn-info" onclick="mostrarDetalhes('agro')">Ver Estatísticas</button>
+            </div>
+        </div>
+
+        <div class="card" id="meio-campo">
+            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&q=80&w=600" alt="Floresta e Preservação">
+            <div class="card-body">
+                <h3>O Meio-Campo: Sustentabilidade</h3>
+                <p>O cérebro do time. A sustentabilidade dita o ritmo do jogo, unindo as técnicas de conservação do solo da agricultura familiar à inovação tecnológica do agronegócio (como o plano ABC+). É a única forma de garantir o campeonato a longo prazo.</p>
+                <button class="btn-info" onclick="mostrarDetalhes('sustentabilidade')">Ver Estatísticas</button>
+            </div>
+        </div>
+
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h3 id="modal-titulo">Título</h3>
+            <p id="modal-texto">Texto explicativo aqui.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 FutVerde FC - O Equilíbrio entre a Produção e o Meio Ambiente.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
